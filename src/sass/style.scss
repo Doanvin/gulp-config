@@ -1,0 +1,19 @@
+@import 'variables';
+
+.header {
+  width: 100%;
+
+  ul {
+    li {
+      background: $raw;
+    }
+  }
+}
+
+section {
+  max-width: 100vw;
+}
+
+footer {
+  background: $raw;
+}

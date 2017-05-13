@@ -1,0 +1,10 @@
+.header {
+  width: 100%; }
+  .header ul li {
+    background: #bd6262; }
+
+section {
+  max-width: 100vw; }
+
+footer {
+  background: #bd6262; }
