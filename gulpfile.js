@@ -6,7 +6,7 @@ var cache         = require('gulp-cache');
 var concat        = require('gulp-concat');
 var htmlmin       = require('gulp-htmlmin');
 var imagemin      = require('gulp-imagemin');
-var minifycss     = require('gulp-minify-css');
+var cleanCSS     = require('gulp-clean-css');
 var plumber       = require('gulp-plumber');
 var reload        = browserSync.reload;
 var rename        = require('gulp-rename');
@@ -33,7 +33,7 @@ gulp.task('sass', function () {
     .pipe(sass())
     .pipe(gulp.dest('build/css'))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(minifycss())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('build/css'))
     .pipe(reload({stream:true}));
 });
