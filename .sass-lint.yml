@@ -1,4 +1,5 @@
 options:
+  convention: strictbem
   formatter: stylish
 files:
   include: '**/*.s+(a|c)ss'
