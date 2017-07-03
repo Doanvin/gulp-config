@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "gulp-config",
   "version": "1.0.0",
-  "description": "A repo for testing technologies that I don't have much experience with.",
+  "description": "Current gulp workflow configuration.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
