@@ -1,13 +1,17 @@
-// DESCRIPTIVE VARIABLES
-//
-// Colors
-// ------
+// DESCRIPTIVE VARIABLES //
+// Colors //
 $black: #000;
 $green: #6FA646;
 $yellow: #E8BD2D;
 $white: #FFF;
 
 
-// FUNCTIONAL VARIABLES
-$primary: $green;
-$secondary: $yellow;
+// FUNCTIONAL VARIABLES //
+$color-primary: $green;
+$color-secondary: $yellow;
+
+
+// MIXINS //
+@mixin border {
+  border: 1px solid $black;
+}

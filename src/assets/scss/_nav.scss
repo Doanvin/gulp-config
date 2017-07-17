@@ -1,0 +1,44 @@
+@import 'settings';
+@import 'typography';
+
+.nav {
+  .nav__item {
+    @include border;
+    @include nav-font;
+    color: $white;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &:hover {
+      background: $color-primary;
+    }
+  }
+}
+
+
+.hero {
+  @include border;
+  background: linear-gradient(rgba(111, 166, 70, .6), rgba(111, 166, 70, .6)),
+  url('//unsplash.it/1600/1000/?gravity=west') center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  &__title {
+    @include heading-font;
+    color: $white;
+    padding-top: 7rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    @include content-font;
+    color: $white;
+    padding-bottom: 7rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

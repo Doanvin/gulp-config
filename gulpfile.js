@@ -71,7 +71,7 @@ gulp.task('html', function() {
 // Img Task
 gulp.task('img', function() {
   return gulp.src('src/assets/img/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+    .pipe(cache(imagemin({progressive: true})))
     .pipe(gulp.dest('dist/assets/img'))
     .pipe(reload({stream:true}));
 });

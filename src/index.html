@@ -11,30 +11,81 @@
 </head>
 
 <body>
-  <header>
+  <header class="hero">
+    <nav class="nav">
+      <ul class="grid">
+        <a class="nav__item" href="#"><li>Home</li></a>
+        <a class="nav__item" href="#"><li>About</li></a>
+        <a class="nav__item" href="#"><li>Events</li></a>
+        <a class="nav__item" href="#"><li>Activities</li></a>
+        <a class="nav__item" href="#"><li>Contact</li></a>
+      </ul>
+    </nav>
 
-    <ul class="c-nav c-nav--inline">
-      <li class="c-nav__item">Home</li>
-      <li class="c-nav__item">News</li>
-      <li class="c-nav__item c-nav__item--right">Contact</li>
-    </ul>
-
-
+    <h1 class="hero__title">Super Boilerplate Code</h1>
+    <h4 class="hero__sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam provident iste aspernatur, incidunt.</h4>
   </header>
 
-  <section>
-    +++++Hello out there
-  </section>
 
-  <section>
+  <main>
+    <section class="grid">
+      <div class="grid__col is-8 is-2--offset text-center">
+        <h2>+++++Hello Out There+++++</h2>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="grid_col is-6 event">
+        <div class="event__top">
+          <h3 class="event__date">JUL 31</h3>
+        </div>
+        <picture>
+          <!-- TODO change picture srcset -->
+          <source srcset="//unsplash.it/900/450/?gravity=west" media="(min-width: 1000px)"/>
+          <source srcset="//unsplash.it/660/330/?gravity=west" media="(min-width: 600px)"/>
+          <source srcset="//unsplash.it/400/200/?gravity=west" media="(max-width: 450px)"/>
+          <img src="//unsplash.it/660/330/?gravity=west" alt="event img"/>
+        </picture>
+        <div class="event__bottom">
+          <h4 class="event__time">12:00 PM - 5:00 PM</h4>
+          <h2 class="event__title">Paddle Making Class</h2>
+          <!-- TODO link to event page -->
+          <a href="#" class="event__details"></a>
+        </div>
+      </div>
+
+      <div class="grid_col is-6 event">
+        <div class="event__top">
+          <h3 class="event__date">JUL 31</h3>
+        </div>
+        <picture>
+          <!-- TODO change picture srcset -->
+          <source srcset="//unsplash.it/900/450/?gravity=west" media="(min-width: 1000px)"/>
+          <source srcset="//unsplash.it/660/330/?gravity=west" media="(min-width: 600px)"/>
+          <source srcset="//unsplash.it/400/200/?gravity=west" media="(max-width: 450px)"/>
+          <img src="//unsplash.it/660/330/?gravity=west" alt="event img"/>
+        </picture>
+        <div class="event__bottom">
+          <h4 class="event__time">12:00 PM - 5:00 PM</h4>
+          <h2 class="event__title">Paddle Making Class</h2>
+          <!-- TODO link to event page -->
+          <a href="#" class="event__details"></a>
+        </div>
+      </div>
+    </section>
+
+
     <h2>+++++These are some cool paddles.</h2>
     <img src="img/paddles-mobile.jpg" alt="Paddle Mobile Pic">
-  </section>
+  </main>
+
 
   <footer>Useful Links<br>
     Store
   </footer>
 
+  <!-- Purposely put on bottom -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
   <script defer src="js/bundle.min.js"></script>
 </body>
 
