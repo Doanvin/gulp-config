@@ -7,18 +7,17 @@
   <title>+++++</title>
   <meta name="description" content="+++++">
   <link rel="stylesheet" href="assets/css/style.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/blaze/dist/objects.grid.min.css">
 </head>
 
 <body>
-  <header class="hero">
-    <nav class="nav">
+  <header class="hero hero--west">
+    <nav class="nav container">
       <ul class="grid">
-        <a class="nav__item" href="#"><li>Home</li></a>
-        <a class="nav__item" href="#"><li>About</li></a>
-        <a class="nav__item" href="#"><li>Events</li></a>
-        <a class="nav__item" href="#"><li>Activities</li></a>
-        <a class="nav__item" href="#"><li>Contact</li></a>
+        <a class="grid__col nav__item" href="#"><li>Home</li></a>
+        <a class="grid__col nav__item" href="#"><li>About</li></a>
+        <a class="grid__col nav__item" href="#"><li>Events</li></a>
+        <a class="grid__col nav__item" href="#"><li>Activities</li></a>
+        <a class="grid__col nav__item" href="#"><li>Contact</li></a>
       </ul>
     </nav>
 
@@ -28,55 +27,45 @@
 
 
   <main>
-    <section class="grid">
-      <div class="grid__col is-8 is-2--offset text-center">
-        <h2>+++++Hello Out There+++++</h2>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="grid_col is-6 event">
-        <div class="event__top">
-          <h3 class="event__date">JUL 31</h3>
+    <section class="panel bg-img bg-img--event">
+      <div class="container grid">
+        <div class="grid__col is-12 text-center">
+          <h2 class="section-title section-title--dark-bg">Upcoming Events</h2>
         </div>
-        <picture>
-          <!-- TODO change picture srcset -->
-          <source srcset="//unsplash.it/900/450/?gravity=west" media="(min-width: 1000px)"/>
-          <source srcset="//unsplash.it/660/330/?gravity=west" media="(min-width: 600px)"/>
-          <source srcset="//unsplash.it/400/200/?gravity=west" media="(max-width: 450px)"/>
-          <img src="//unsplash.it/660/330/?gravity=west" alt="event img"/>
-        </picture>
-        <div class="event__bottom">
+        <div class="grid__col is-6 event">
+          <h3 class="event__date">JUL 31</h3>
+          <picture>
+            <!-- TODO change picture srcset -->
+            <source srcset="//unsplash.it/660/330/?gravity=west" media="(min-width: 491px)"/>
+            <source srcset="//unsplash.it/480/320/?gravity=west" media="(max-width: 490px)"/>
+            <img class="media" src="//unsplash.it/660/330/?gravity=west" alt="event img"/>
+          </picture>
           <h4 class="event__time">12:00 PM - 5:00 PM</h4>
           <h2 class="event__title">Paddle Making Class</h2>
           <!-- TODO link to event page -->
-          <a href="#" class="event__details"></a>
+          <div class="event__details"><a href="#" class="event__details-link">View Details ►</a></div>
         </div>
-      </div>
 
-      <div class="grid_col is-6 event">
-        <div class="event__top">
+        <div class="grid__col is-6 event">
           <h3 class="event__date">JUL 31</h3>
-        </div>
-        <picture>
-          <!-- TODO change picture srcset -->
-          <source srcset="//unsplash.it/900/450/?gravity=west" media="(min-width: 1000px)"/>
-          <source srcset="//unsplash.it/660/330/?gravity=west" media="(min-width: 600px)"/>
-          <source srcset="//unsplash.it/400/200/?gravity=west" media="(max-width: 450px)"/>
-          <img src="//unsplash.it/660/330/?gravity=west" alt="event img"/>
-        </picture>
-        <div class="event__bottom">
+          <picture>
+            <!-- TODO change picture srcset -->
+            <source srcset="//unsplash.it/660/330/?gravity=west" media="(min-width: 491px)"/>
+            <source srcset="//unsplash.it/480/320/?gravity=west" media="(max-width: 490px)"/>
+            <img class="media" src="//unsplash.it/660/330/?gravity=west" alt="event img"/>
+          </picture>
           <h4 class="event__time">12:00 PM - 5:00 PM</h4>
           <h2 class="event__title">Paddle Making Class</h2>
           <!-- TODO link to event page -->
-          <a href="#" class="event__details"></a>
+          <div class="event__details"><a href="#" class="event__details-link">View Details ►</a></div>
+        </div>
+
+        <div class="grid__col is-12 text-center">
+          <a href="#"><button class="btn--secondary btn--sharp">More Events</button></a>
         </div>
       </div>
     </section>
 
-
-    <h2>+++++These are some cool paddles.</h2>
-    <img src="img/paddles-mobile.jpg" alt="Paddle Mobile Pic">
   </main>
 
 
@@ -86,7 +75,7 @@
 
   <!-- Purposely put on bottom -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
-  <script defer src="js/bundle.min.js"></script>
+  <script defer src="assets/js/bundle.min.js"></script>
 </body>
 
 </html>
