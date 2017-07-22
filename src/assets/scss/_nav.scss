@@ -9,14 +9,14 @@
     list-style: none;
     text-align: center;
     text-decoration: none;
-    text-transform: capitalize;
     text-shadow: none;
+    text-transform: capitalize;
 
     &:hover,
     &:focus {
       background: $color-primary;
       text-shadow: 1px 0 5px $black;
-      transition: background, text-shadow .2s ease-out;
+      transition: background, text-shadow .1s ease-out;
     }
   }
 }
@@ -82,10 +82,6 @@
   }
 }
 
-@media screen and (max-width: ) {
-
-}
-
 .event {
   &__date {
     @include content-font;
@@ -138,10 +134,25 @@
   }
 }
 
-.btn--secondary {
-  @include content-font;
-  background-color: $color-secondary !important;
-  color: $color-font-dark-bg !important;
+
+.btn {
+  &--primary {
+    @include content-font;
+    background-color: $color-primary !important;
+    color: $color-font-dark-bg !important;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($color-primary, 10) !important;
+    }
+  }
+
+
+  &--secondary {
+    @include content-font;
+    background-color: $color-secondary !important;
+    color: $color-font-dark-bg !important;
+  }
 }
 
 .panel {
