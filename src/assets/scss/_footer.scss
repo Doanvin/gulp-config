@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src:  url('../font/fontello.woff2') format('woff2'),
+        url('../font/fontello.woff') format('woff');
+}
+
+// A Hover | Link Style
+$a-link-color: #fff;
+$a-visited-color: #fff;
+$a-hover-color: $color-primary;
+$a-active-color: #fff;
+$a-link-text-dec: none;
+$a-hover-text-dec: none;
+
+// Icons
+$icon-font-size: 18px;
+
+// List-Unstyled
+$list-p-w-m: 1.75rem;
+
+.bg--primary {
+  background: lighten($color-primary, 10);
+}
+
+.footer {
+  padding: 2rem;
+  color: $color-font-dark-bg;
+
+  &__title {
+    @include content-font;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: capitalize;
+  }
+
+  &__col {
+    @include content-font;
+    padding-bottom: .5rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
+
+    // unvisited link
+    a:link {
+      color: $a-link-color;
+      text-decoration: $a-link-text-dec;
+    }
+
+    // visited link
+    a:visited {
+      color: $a-link-color;
+      text-decoration: $a-link-text-dec;
+    }
+
+    // mouse over link
+    a:hover {
+      color: $a-hover-color;
+      text-decoration: $a-hover-text-dec;
+    }
+
+    // selected link
+    a:active {
+      color: $a-active-color;
+      text-decoration: $a-hover-text-dec;
+    }
+  }
+
+  &__item-icon {
+    &--address::before {
+      font-family: FontAwesome;
+      font-size: $icon-font-size;
+      content: '\f041';
+    }
+
+    &--email::before {
+      font-family: FontAwesome;
+      font-size: $icon-font-size;
+      content: '\f2b6';
+    }
+
+    &--phone::before {
+      font-family: FontAwesome;
+      font-size: $icon-font-size;
+      content: '\f095';
+    }
+  }
+}
+
+.list-unstyled {
+  list-style: none;
+
+  &--fa-icons {
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-left: $list-p-w-m;
+    }
+
+    li::before {
+      display: inline-block;
+      width: $list-p-w-m;
+      margin-left: -$list-p-w-m;
+    }
+  }
+}

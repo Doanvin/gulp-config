@@ -76,16 +76,25 @@
       <div class="grid grid-center">
         <!-- TODO create JS for tabs -->
         <div class="grid__col is-4">
-          <a href="#"><button class="btn--primary btn tab btn--active">Drums</button></a>
-          <a href="#"><button class="btn--primary btn tab">Paddles</button></a>
-          <a href="#"><button class="btn--primary btn tab">Beads</button></a>
-          <a href="#"><button class="btn--primary btn tab">Weaving</button></a>
-          <a href="#"><button class="btn--primary btn tab">Bags</button></a>
+          <a href="#"><button class="btn--primary btn--sharp tab btn--active">Drums</button></a>
+          <a href="#"><button class="btn--primary btn--sharp tab">Paddles</button></a>
+          <a href="#"><button class="btn--primary btn--sharp tab">Beads</button></a>
+          <a href="#"><button class="btn--primary btn--sharp tab">Weaving</button></a>
+          <a href="#"><button class="btn--primary btn--sharp tab">Bags</button></a>
         </div>
       </div>
       <div class="container grid">
-        <div class="grid__col" id="tab-content">
-
+        <div class="grid__col is-12" id="tab-content">
+          <p>Paragraph of text about making drums. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, similique doloremque aspernatur qui at obcaecati expedita rerum adipisci repellat reiciendis dignissimos eaque, vel incidunt sequi laboriosam, temporibus! Suscipit ab, officiis?</p>
+        </div>
+        <div class="grid__col is-4">
+          <img class="media" src="//unsplash.it/360/270.jpg" alt="Drum Picture 1">
+        </div>
+        <div class="grid__col is-4">
+          <img class="media" src="img/3-2017/active/drums-2.jpg" alt="Drum Picture 2">
+        </div>
+        <div class="grid__col is-4">
+          <img class="media" src="img/3-2017/active/drums-5.jpg" alt="Drum Picture 3">
         </div>
       </div>
 
@@ -93,8 +102,33 @@
   </main>
 
 
-  <footer>Useful Links<br>
-    Store
+  <footer class="footer bg--primary">
+    <div class="container grid">
+      <div class="grid__col is-12--small is-4--medium is-4--large footer__col">
+        <div class="footer__title">Section 1 Title</div>
+        <a href="#">Home</a>
+        <br>
+        <a href="#">About</a>
+        <br>
+        <a href="#">Contact</a>
+      </div>
+      <div class="grid__col is-12--small is-4--medium is-4--large footer__col">
+        <div class="footer__title">Section 2 Title</div>
+        <a href="#">Careers</a>
+        <br>
+        <a href="#">Terms of Service</a>
+        <br>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="grid__col is-12--small is-4--medium is-4--large footer__col">
+        <div class="footer__title">Contact Info</div>
+        <ul class="list-unstyled list-unstyled--fa-icons">
+          <li class="footer__item-icon--email"><a href="mailto:example@email.com">Example@Email.com</a></li>
+          <li class="footer__item-icon--address">444 Road Name Here<br>City, State Zip</li>
+          <li class="footer__item-icon--phone"><a href="tel:18475555555">1-847-555-5555</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
   <!-- Purposely put on bottom -->
