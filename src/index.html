@@ -20,7 +20,6 @@
         <a class="grid__col nav__item" href="#"><li>Contact</li></a>
       </ul>
     </nav>
-
     <h1 class="hero__title">Calaska Culture Camp</h1>
     <h4 class="hero__sub-title">Bringing Native Alaskans together in Northern California to practice traditional cultural activities.</h4>
   </header>
@@ -30,7 +29,7 @@
     <section class="panel bg-img bg-img--event">
       <div class="container grid">
         <div class="grid__col is-12 text-center">
-          <h2 class="section-title section-title--dark-bg">Upcoming Events</h2>
+          <h2 class="section-title section-title--light-bg">Upcoming Events</h2>
         </div>
         <div class="grid__col is-6 event">
           <h3 class="event__date">JUL 31</h3>
@@ -61,44 +60,86 @@
         </div>
 
         <div class="grid__col is-12 text-center">
-          <a href="#"><button class="btn--secondary btn--sharp">More Events</button></a>
+          <a href="#"><button class="btn--secondary btn--sharp">More Upcoming Events</button></a>
         </div>
       </div>
     </section>
 
 
-    <section class="panel">
+    <section class="panel bg-img--activities">
       <div class="container grid">
         <div class="grid__col is-12 text-center">
-          <h2 class="section-title section-title--light-bg">Cultural Activities</h2>
+          <h2 class="section-title section-title--dark-bg">Cultural Activities</h2>
         </div>
       </div>
       <div class="container grid grid-center">
         <!-- TODO create JS for tabs -->
         <div class="grid__col text-center is-12">
-          <a href="#"><button class="btn--primary btn--sharp tab btn--active">Drums</button></a>
-          <a href="#"><button class="btn--primary btn--sharp tab">Paddles</button></a>
-          <a href="#"><button class="btn--primary btn--sharp tab">Beads</button></a>
-          <a href="#"><button class="btn--primary btn--sharp tab">Weaving</button></a>
-          <a href="#"><button class="btn--primary btn--sharp tab">Bags</button></a>
+          <a href="#"><button class="btn--light btn--sharp tab btn--active">Drums</button></a>
+          <a href="#"><button class="btn--light btn--sharp tab">Paddles</button></a>
+          <a href="#"><button class="btn--light btn--sharp tab">Beads</button></a>
+          <a href="#"><button class="btn--light btn--sharp tab">Weaving</button></a>
+          <a href="#"><button class="btn--light btn--sharp tab">Bags</button></a>
         </div>
       </div>
+      <div id="tab-content">
+        <div class="container grid">
+          <div class="grid__col is-12">
+            <p class="activity__text">Paragraph of text about making drums. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, similique doloremque aspernatur qui at obcaecati expedita rerum adipisci repellat reiciendis dignissimos eaque, vel incidunt sequi laboriosam, temporibus! Suscipit ab, officiis?</p>
+          </div>
+          <div class="grid__col text-center is-12--small is-4--medium is-4--large">
+            <img class="media" src="assets/img/3-2017/active/drums-17.jpg" alt="Drum Picture 1">
+          </div>
+          <div class="grid__col text-center is-12--small is-4--medium is-4--large">
+            <img class="media" src="assets/img/3-2017/active/drums-2.jpg" alt="Drum Picture 2">
+          </div>
+          <div class="grid__col text-center is-12--small is-4--medium is-4--large">
+            <img class="media" src="assets/img/3-2017/active/drums-5.jpg" alt="Drum Picture 3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
       <div class="container grid">
-        <div class="grid__col is-12" id="tab-content">
-          <p>Paragraph of text about making drums. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, similique doloremque aspernatur qui at obcaecati expedita rerum adipisci repellat reiciendis dignissimos eaque, vel incidunt sequi laboriosam, temporibus! Suscipit ab, officiis?</p>
+        <div class="grid__col is-12 text-center">
+          <h2 class="section-title section-title--light-bg">Past Events</h2>
         </div>
-        <div class="grid__col is-4">
-          <img class="media" src="//unsplash.it/360/270.jpg" alt="Drum Picture 1">
+        <div class="grid__col is-6 event">
+          <h3 class="event__date">JUL 31</h3>
+          <picture>
+            <!-- TODO change picture srcset -->
+            <source srcset="//unsplash.it/660/330/?gravity=west" media="(min-width: 491px)"/>
+            <source srcset="//unsplash.it/480/320/?gravity=west" media="(max-width: 490px)"/>
+            <img class="media" src="//unsplash.it/660/330/?gravity=west" alt="event img"/>
+          </picture>
+          <h4 class="event__time">12:00 PM - 5:00 PM</h4>
+          <h2 class="event__title">Paddle Making Class</h2>
+          <!-- TODO link to event page -->
+          <div class="event__details"><a href="#" class="event__details-link">View Details ►</a></div>
         </div>
-        <div class="grid__col is-4">
-          <img class="media" src="img/3-2017/active/drums-2.jpg" alt="Drum Picture 2">
+
+        <div class="grid__col is-6 event">
+          <h3 class="event__date">JUL 31</h3>
+          <picture>
+            <!-- TODO change picture srcset -->
+            <source srcset="//unsplash.it/660/330/?gravity=west" media="(min-width: 491px)"/>
+            <source srcset="//unsplash.it/480/320/?gravity=west" media="(max-width: 490px)"/>
+            <img class="media" src="//unsplash.it/660/330/?gravity=west" alt="event img"/>
+          </picture>
+          <h4 class="event__time">12:00 PM - 5:00 PM</h4>
+          <h2 class="event__title">Paddle Making Class</h2>
+          <!-- TODO link to event page -->
+          <div class="event__details"><a href="#" class="event__details-link">View Details ►</a></div>
         </div>
-        <div class="grid__col is-4">
-          <img class="media" src="img/3-2017/active/drums-5.jpg" alt="Drum Picture 3">
+
+        <div class="grid__col is-12 text-center">
+          <a href="#"><button class="btn--secondary btn--sharp">More Past Events</button></a>
         </div>
       </div>
 
     </section>
+
   </main>
 
 

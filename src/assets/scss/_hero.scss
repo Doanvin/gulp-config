@@ -1,12 +1,12 @@
 .hero {
-  @include border;
   background-size: cover;
   height: 100%;
-  padding-bottom: 7rem;
+  padding-bottom: $hero-vertical-padding;
   width: 100%;
 
   &--west {
-    background: url('//unsplash.it/1600/1000/?gravity=west') center center no-repeat;
+    background: linear-gradient(transparentize($black, .7), transparentize($black, .7)),
+    url('/assets/img/bg/totems-desktop.jpg') center center no-repeat;
     // background: linear-gradient(transparentize($color-primary, .6), transparentize($color-primary, .6)),
     // url('//unsplash.it/1600/1000/?gravity=west') center center no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@
   &__title {
     @include heading-font;
     color: $white;
-    padding-top: 7rem;
+    padding-top: $hero-vertical-padding;
     text-align: center;
     text-transform: uppercase;
   }
@@ -25,6 +25,5 @@
     @include content-font;
     color: $white;
     text-align: center;
-    text-transform: uppercase;
   }
 }
